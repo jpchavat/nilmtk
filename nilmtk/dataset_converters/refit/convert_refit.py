@@ -86,7 +86,7 @@ def _convert(input_path, store, tz, sort_index=True):
         
         df = _load_csv(csv_filename, usecols, tz)
         if sort_index:
-            df = df.sort_index() # might not be sorted...
+            df = df.sort_index()  # might not be sorted...
         chan_id = 0
         for col in df.columns:
             chan_id += 1
